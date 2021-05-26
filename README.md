@@ -15,17 +15,17 @@ How to run the tests:
  Recommended:
  	Create a Personal Access Token on Github granting all authorization => https://github.com/settings/tokens
 	Edit the pom.xml to set your Personal Access Token and username then save
-    mvn clean test
+    	mvn clean test
  Or:
-    Create a Personal Access Token on Github granting all authorization => https://github.com/settings/tokens
+    	Create a Personal Access Token on Github granting all authorization => https://github.com/settings/tokens
 	mvn clean test -Dclient.token=[PASTEYOURTOKENHERE] -Dclient.username=[YOURUSERNAME]
 
 
  Not recommended - if you don't have a Personal Access Token (some tests can fail depending on your github security settings):
 	Edit the pom.xml to set the client.token to empty, set your username and password then save
-    mvn clean test
+    	mvn clean test
  Or:
-    mvn clean test -Dclient.token= -Dclient.username=[YOURUSERNAME] -Dclient.password=[YOURPASSWORD]
+    	mvn clean test -Dclient.token= -Dclient.username=[YOURUSERNAME] -Dclient.password=[YOURPASSWORD]
     
   /!\  Leaving client token and username empty will run the tests as unauthenticated. Some tests will fail.
 
